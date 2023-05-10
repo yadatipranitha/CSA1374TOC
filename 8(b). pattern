@@ -1,0 +1,20 @@
+#include<stdio.h> 
+#include<string.h> 
+#define NO_OF_CHARS 256 
+int getNextState(char *pat, int M, int state, int x) 
+{ 
+if (state < M && x == pat[state]) 
+return state+1; 
+int ns,i;
+for (ns = state; ns > 0; ns--) 
+{ 
+if (pat[ns-1] == x) 
+{ 
+for (i = 0; i < ns-1; i++) 
+if (pat[i] != pat[state-ns+1+i]) 
+break; 
+if (i == ns-1) 
+return ns; 
+} 
+}  
+} 
