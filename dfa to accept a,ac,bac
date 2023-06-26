@@ -1,0 +1,29 @@
+Automaton Simulator, v1.0
+dfa {
+	alphabet {abcd*}
+	state {
+		initial {yes}
+		coord {496 198}
+	}
+	state {
+		final {yes}
+		coord {709 198}
+	}
+	edge 0 0 {
+		transits {b}
+		offset {2.356194490192345}
+	}
+	edge 0 1 {
+		transits {a}
+		offset {0.8949001455693418}
+	}
+	edge 1 1 {
+		transits {c}
+		offset {2.356194490192345}
+	}
+	label {
+		text {}
+		font {SansSerif 12 -}
+		coord {383 269}
+	}
+}
